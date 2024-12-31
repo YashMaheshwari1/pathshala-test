@@ -1,6 +1,6 @@
 import { Navigate, Route } from "react-router";
 import { all_routes } from "./all_routes";
-import Countries from "../content/location/countries";
+// import Countries from "../content/location/countries";
 import DataTable from "../tables/dataTable";
 import BasicTable from "../tables/basicTable";
 import DeleteRequest from "../userManagement/deleteRequest";
@@ -128,15 +128,15 @@ import PaymentGateways from "../settings/financialSettings/paymentGateways";
 import TaxRates from "../settings/financialSettings/taxRates";
 import Storage from "../settings/otherSettings/storage";
 import BanIpAddress from "../settings/otherSettings/banIpaddress";
-import BlogCategories from "../content/blog/blogCategories";
-import BlogComments from "../content/blog/blogComments";
-import BlogTags from "../content/blog/blogTags";
+// import BlogCategories from "../content/blog/blogCategories";
+// import BlogComments from "../content/blog/blogComments";
+// import BlogTags from "../content/blog/blogTags";
 import Faq from "../content/faq";
-import Cities from "../content/location/cities";
-import States from "../content/location/states";
-import Testimonials from "../content/testimonials";
+// import Cities from "../content/location/cities";
+// import States from "../content/location/states";
+// import Testimonials from "../content/testimonials";
 import Profile from "../pages/profile";
-import LockScreen from "../auth/lockScreen";
+// import LockScreen from "../auth/lockScreen";
 import EmailVerification2 from "../auth/emailVerification/emailVerification-2";
 import EmailVerification3 from "../auth/emailVerification/emailVerification-3";
 import EmployeeDashboard from "../mainMenu/employeeDashboard/employee-dashboard";
@@ -170,7 +170,7 @@ import PrivacyPolicy from "../pages/privacy-policy";
 import TermsCondition from "../pages/terms-condition";
 import Gallery from "../pages/gallery";
 import EmailReply from "../application/emailReply";
-import Blogs from "../content/blog/blogs";
+// import Blogs from "../content/blog/blogs";
 import Page from "../content/page";
 import Assets from "../administration/asset";
 import AssetsCategory from "../administration/asset-category";
@@ -214,18 +214,18 @@ import ProjectList from "../projects/project/projectlist";
 import Task from "../projects/task/task";
 import TaskDetails from "../projects/task/taskdetails";
 import TaskBoard from "../projects/task/task-board";
-import Extimates from "../finance-accounts/sales/estimates";
-import AddInvoice from "../finance-accounts/sales/add_invoices";
-import EditInvoice from "../finance-accounts/payrool/payslip";
-import Payments from "../finance-accounts/sales/payment";
-import Expenses from "../finance-accounts/sales/expenses";
-import ProvidentFund from "../finance-accounts/sales/provident_fund";
-import Taxes from "../finance-accounts/sales/taxes";
-import EmployeeSalary from "../finance-accounts/payrool/employee_salary";
-import PaySlip from "../finance-accounts/payrool/payslip";
-import PayRoll from "../finance-accounts/payrool/payroll";
-import PayRollOvertime from "../finance-accounts/payrool/payrollOvertime";
-import PayRollDeduction from "../finance-accounts/payrool/payrollDedution";
+// import Extimates from "../finance-accounts/sales/estimates";
+// import AddInvoice from "../finance-accounts/sales/add_invoices";
+// import EditInvoice from "../finance-accounts/payrool/payslip";
+// import Payments from "../finance-accounts/sales/payment";
+// import Expenses from "../finance-accounts/sales/expenses";
+// import ProvidentFund from "../finance-accounts/sales/provident_fund";
+// import Taxes from "../finance-accounts/sales/taxes";
+// import EmployeeSalary from "../finance-accounts/payrool/employee_salary";
+// import PaySlip from "../finance-accounts/payrool/payslip";
+// import PayRoll from "../finance-accounts/payrool/payroll";
+// import PayRollOvertime from "../finance-accounts/payrool/payrollOvertime";
+// import PayRollDeduction from "../finance-accounts/payrool/payrollDedution";
 import Tickets from "../tickets/tickets";
 import TicketGrid from "../tickets/tickets-grid";
 import TicketDetails from "../tickets/ticket-details";
@@ -290,7 +290,7 @@ import Resignation from "../hrm/resignation";
 import Promotion from "../hrm/promotion";
 import Trainers from "../training/trainers";
 import TrainingList from "../training/trainingList";
-import Invoices from "../finance-accounts/sales/invoices";
+// import Invoices from "../finance-accounts/sales/invoices";
 const routes = all_routes;
 
 export const publicRoutes = [
@@ -320,10 +320,10 @@ export const publicRoutes = [
     element: <DealsDashboard />,
     route: Route,
   },
-  {
-    path: routes.estimate,
-    element: <Extimates />,
-  },
+  // {
+  //   path: routes.estimate,
+  //   element: <Extimates />,
+  // },
   {
     path: routes.termination,
     element: <Termination />,
@@ -392,11 +392,11 @@ export const publicRoutes = [
     element: <KanbanView />,
     route: Route,
   },
-  {
-    path: routes.countries,
-    element: <Countries />,
-    route: Route,
-  },
+  // {
+  //   path: routes.countries,
+  //   element: <Countries />,
+  //   route: Route,
+  // },
   {
     path: routes.starter,
     element: <StarterPage />,
@@ -429,11 +429,11 @@ export const publicRoutes = [
     path: routes.notes,
     element: <Notes />,
   },
-  {
-    path: routes.countries,
-    element: <Countries />,
-    route: Route,
-  },
+  // {
+  //   path: routes.countries,
+  //   element: <Countries />,
+  //   route: Route,
+  // },
   {
     path: routes.customFields,
     element: <CustomFields />,
@@ -455,11 +455,11 @@ export const publicRoutes = [
     element: <DeleteRequest />,
     route: Route,
   },
-  {
-    path: routes.cities,
-    element: <Cities />,
-    route: Route,
-  },
+  // {
+  //   path: routes.cities,
+  //   element: <Cities />,
+  //   route: Route,
+  // },
 
   {
     path: routes.accordion,
@@ -669,16 +669,16 @@ export const publicRoutes = [
     route: Route,
   },
 
-  {
-    path: routes.states,
-    element: <States />,
-    route: Route,
-  },
-  {
-    path: routes.testimonials,
-    element: <Testimonials />,
-    route: Route,
-  },
+  // {
+  //   path: routes.states,
+  //   element: <States />,
+  //   route: Route,
+  // },
+  // {
+  //   path: routes.testimonials,
+  //   element: <Testimonials />,
+  //   route: Route,
+  // },
   {
     path: routes.clipboard,
     element: <ClipBoard />,
@@ -1214,23 +1214,23 @@ export const publicRoutes = [
     path: routes.manageusers,
     element: <Manageusers />,
   },
-  {
-    path: routes.blogs,
-    element: <Blogs />,
-  },
-  {
-    path: routes.blogCategories,
-    element: <BlogCategories />,
-    route: Route,
-  },
-  {
-    path: routes.blogComments,
-    element: <BlogComments />,
-  },
-  {
-    path: routes.blogTags,
-    element: <BlogTags />,
-  },
+  // {
+  //   path: routes.blogs,
+  //   element: <Blogs />,
+  // },
+  // {
+  //   path: routes.blogCategories,
+  //   element: <BlogCategories />,
+  //   route: Route,
+  // },
+  // {
+  //   path: routes.blogComments,
+  //   element: <BlogComments />,
+  // },
+  // {
+  //   path: routes.blogTags,
+  //   element: <BlogTags />,
+  // },
 
   {
     path: routes.profile,
@@ -1409,76 +1409,76 @@ export const publicRoutes = [
     element: <TaskBoard />,
     route: Route,
   },
-  {
-    path: routes.invoices,
-    element: <Invoices />,
-    route: Route,
-  },
-  {
-    path: routes.invoice,
-    element: <Invoices />,
-    route: Route,
-  },
-  {
-    path: routes.addinvoice,
-    element: <AddInvoice />,
-    route: Route,
-  },
-  {
-    path: routes.editinvoice,
-    element: <EditInvoice />,
-    route: Route,
-  },
+  // {
+  //   path: routes.invoices,
+  //   element: <Invoices />,
+  //   route: Route,
+  // },
+  // {
+  //   path: routes.invoice,
+  //   element: <Invoices />,
+  //   route: Route,
+  // },
+  // {
+  //   path: routes.addinvoice,
+  //   element: <AddInvoice />,
+  //   route: Route,
+  // },
+  // {
+  //   path: routes.editinvoice,
+  //   element: <EditInvoice />,
+  //   route: Route,
+  // },
   {
     path: routes.invoicesdetails,
     element: <InvoiceDetails />,
     route: Route,
   },
-  {
-    path: routes.payments,
-    element: <Payments />,
-    route: Route,
-  },
-  {
-    path: routes.expenses,
-    element: <Expenses />,
-    route: Route,
-  },
-  {
-    path: routes.providentfund,
-    element: <ProvidentFund />,
-    route: Route,
-  },
-  {
-    path: routes.taxes,
-    element: <Taxes />,
-    route: Route,
-  },
-  {
-    path: routes.employeesalary,
-    element: <EmployeeSalary />,
-    route: Route,
-  },
-  {
-    path: routes.payslip,
-    element: <PaySlip />,
-    route: Route,
-  },
-  {
-    path: routes.payrollAddition,
-    element: <PayRoll />,
-    route: Route,
-  },
-  {
-    path: routes.payrollOvertime,
-    element: <PayRollOvertime />,
-    route: Route,
-  },
-  {
-    path: routes.payrollDeduction,
-    element: <PayRollDeduction />,
-    route: Route,
-  },
+  // {
+  //   path: routes.payments,
+  //   element: <Payments />,
+  //   route: Route,
+  // },
+  // {
+  //   path: routes.expenses,
+  //   element: <Expenses />,
+  //   route: Route,
+  // },
+  // {
+  //   path: routes.providentfund,
+  //   element: <ProvidentFund />,
+  //   route: Route,
+  // },
+  // {
+  //   path: routes.taxes,
+  //   element: <Taxes />,
+  //   route: Route,
+  // },
+  // {
+  //   path: routes.employeesalary,
+  //   element: <EmployeeSalary />,
+  //   route: Route,
+  // },
+  // {
+  //   path: routes.payslip,
+  //   element: <PaySlip />,
+  //   route: Route,
+  // },
+  // {
+  //   path: routes.payrollAddition,
+  //   element: <PayRoll />,
+  //   route: Route,
+  // },
+  // {
+  //   path: routes.payrollOvertime,
+  //   element: <PayRollOvertime />,
+  //   route: Route,
+  // },
+  // {
+  //   path: routes.payrollDeduction,
+  //   element: <PayRollDeduction />,
+  //   route: Route,
+  // },
   {
     path: routes.employeeList,
     element: <EmployeeList />,
@@ -1768,10 +1768,10 @@ export const authRoutes = [
     path: routes.underConstruction,
     element: <UnderConstruction />,
   },
-  {
-    path: routes.lockScreen,
-    element: <LockScreen />,
-  },
+  // {
+  //   path: routes.lockScreen,
+  //   element: <LockScreen />,
+  // },
   {
     path: routes.resetPasswordSuccess,
     element: <ResetPasswordSuccess />,
