@@ -8,6 +8,7 @@ import EmailVerification from "../auth/emailVerification/emailVerification";
 import ResetPassword from "../auth/resetPassword/resetPassword";
 import ForgotPassword from "../auth/forgotPassword/forgotPassword";
 import CallHistory from "../application/call/callHistory";
+import AdminDashboard from "../mainMenu/adminDashboard";
 
 import Login2 from "../auth/login/login-2";
 import Login3 from "../auth/login/login-3";
@@ -28,6 +29,7 @@ import Permission from "../userManagement/permission";
 import Manageusers from "../userManagement/manageusers";
 import EmailVerification2 from "../auth/emailVerification/emailVerification-2";
 import EmailVerification3 from "../auth/emailVerification/emailVerification-3";
+import Calendars from "../mainMenu/apps/calendar";
 import Knowledgebase from "../administration/help-support/knowledgebase";
 import Activity from "../administration/help-support/activity";
 import Users from "../administration/user-management/users";
@@ -45,6 +47,7 @@ import TicketDetails from "../tickets/ticket-details";
 import ContactDetails from "../crm/contacts/contactDetails";
 import ContactList from "../crm/contacts/contactList";
 import ContactGrid from "../crm/contacts/contactGrid";
+
 const routes = all_routes;
 
 export const publicRoutes = [
@@ -54,8 +57,11 @@ export const publicRoutes = [
     element: <Navigate to="/index" />,
     route: Route,
   },
-  
-
+  {
+    path: routes.adminDashboard,
+    element: <AdminDashboard />,
+    route: Route,
+  },
 
   //Application
   {
@@ -64,6 +70,12 @@ export const publicRoutes = [
     route: Route,
   },
 
+  {
+    path: routes.calendar,
+    element: <Calendars />,
+    route: Route,
+  },
+ 
   {
     path: routes.deleteRequest,
     element: <DeleteRequest />,
