@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import ImageWithBasePath from '../../../core/common/imageWithBasePath'
 import { all_routes } from '../../router/all_routes'
-import CommonTabs from '../common-components'
 import CollapseHeader from '../../../core/common/collapse-header/collapse-header'
 import CrmsModal from '../../../core/modals/crms_modal'
 
@@ -248,7 +247,6 @@ const ContactDetails = () => {
           </div>
         </div>
       </div>
-      <CommonTabs/>
     </div>
   </div>
   <div className="footer d-sm-flex align-items-center justify-content-between border-top bg-white p-3">
