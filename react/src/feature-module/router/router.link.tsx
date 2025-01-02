@@ -9,6 +9,13 @@ import ResetPassword from "../auth/resetPassword/resetPassword";
 import ForgotPassword from "../auth/forgotPassword/forgotPassword";
 import CallHistory from "../application/call/callHistory";
 import AdminDashboard from "../mainMenu/adminDashboard";
+import EditInvoice from "../finance-accounts/payrool/payslip";
+import EmployeeSalary from "../finance-accounts/payrool/employee_salary";
+import PaySlip from "../finance-accounts/payrool/payslip";
+import PayRoll from "../finance-accounts/payrool/payroll";
+import PayRollOvertime from "../finance-accounts/payrool/payrollOvertime";
+import PayRollDeduction from "../finance-accounts/payrool/payrollDedution";
+
 
 import Login2 from "../auth/login/login-2";
 import Login3 from "../auth/login/login-3";
@@ -60,6 +67,40 @@ export const publicRoutes = [
   {
     path: routes.adminDashboard,
     element: <AdminDashboard />,
+    route: Route,
+  },
+
+
+  // finance-accounts
+  {
+    path: routes.editinvoice,
+    element: <EditInvoice />,
+    route: Route,
+  },
+  
+  {
+    path: routes.employeesalary,
+    element: <EmployeeSalary />,
+    route: Route,
+  },
+  {
+    path: routes.payslip,
+    element: <PaySlip />,
+    route: Route,
+  },
+  {
+    path: routes.payrollAddition,
+    element: <PayRoll />,
+    route: Route,
+  },
+  {
+    path: routes.payrollOvertime,
+    element: <PayRollOvertime />,
+    route: Route,
+  },
+  {
+    path: routes.payrollDeduction,
+    element: <PayRollDeduction />,
     route: Route,
   },
 
