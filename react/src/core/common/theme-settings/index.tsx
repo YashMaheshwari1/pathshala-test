@@ -12,7 +12,7 @@ import {
   setDataTheme,
   setDataTopbarAll,
   setDataTopbarBg,
-  setDataTopBarColorAll,
+  setDataTopBarColorAll, 
   setDataWidth,
   setLoader,
   setRtl,

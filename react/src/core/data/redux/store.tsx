@@ -3,7 +3,7 @@ import themeSettingSlice from './themeSettingSlice';
 import sidebarSlice from './sidebarSlice';
 
 
-const store = configureStore({
+const store = configureStore({ 
   reducer: {
     themeSetting: themeSettingSlice,
     sidebarSlice: sidebarSlice,

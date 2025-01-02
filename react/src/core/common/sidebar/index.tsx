@@ -6,7 +6,7 @@ import "../../../style/icon/tabler-icons/webfont/tabler-icons.css";
 import { setExpandMenu } from "../../data/redux/sidebarSlice";
 import { useDispatch } from "react-redux";
 import {
-  resetAllMode,
+  resetAllMode, 
   setDataLayout,
 } from "../../data/redux/themeSettingSlice";
 import usePreviousRoute from "./usePreviousRoute";
