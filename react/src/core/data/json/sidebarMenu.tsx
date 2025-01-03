@@ -39,6 +39,13 @@ export const SidebarDataTest = [
             customSubmenuTwo: false,
             base: 'calendar',
           },
+          {
+            label: 'Email',
+            showSubRoute: false,
+            link: routes.email,
+            customSubmenuTwo: false,
+            base: 'email',
+          },
         ],
       },
     ],
