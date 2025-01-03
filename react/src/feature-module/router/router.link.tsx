@@ -8,6 +8,7 @@ import EmailVerification from "../auth/emailVerification/emailVerification";
 import ResetPassword from "../auth/resetPassword/resetPassword";
 import ForgotPassword from "../auth/forgotPassword/forgotPassword";
 import CallHistory from "../application/call/callHistory";
+import Email from "../application/email";
 import AdminDashboard from "../mainMenu/adminDashboard";
 import EditInvoice from "../finance-accounts/payrool/payslip";
 import EmployeeSalary from "../finance-accounts/payrool/employee_salary";
@@ -114,6 +115,12 @@ export const publicRoutes = [
   {
     path: routes.calendar,
     element: <Calendars />,
+    route: Route,
+  },
+
+   {
+    path: routes.email,
+    element: <Email />,
     route: Route,
   },
  
