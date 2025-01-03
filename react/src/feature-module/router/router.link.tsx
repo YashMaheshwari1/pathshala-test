@@ -10,7 +10,7 @@ import ForgotPassword from "../auth/forgotPassword/forgotPassword";
 import Email from "../application/email";
 import CallHistory from "../application/call/callHistory";
 import AdminDashboard from "../mainMenu/adminDashboard";
-
+import Profile from "../pages/profile";
 import Login2 from "../auth/login/login-2";
 import Login3 from "../auth/login/login-3";
 import ResetPassword2 from "../auth/resetPassword/resetPassword-2";
@@ -117,6 +117,13 @@ export const publicRoutes = [
     path: routes.adminDashboard,
     element: <AdminDashboard />,
     route: Route,
+  },
+
+  // pages
+
+  {
+    path: routes.profile,
+    element: <Profile />,
   },
 
 
