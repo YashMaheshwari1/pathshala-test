@@ -8,6 +8,8 @@ import EmailVerification from "../auth/emailVerification/emailVerification";
 import ResetPassword from "../auth/resetPassword/resetPassword";
 import ForgotPassword from "../auth/forgotPassword/forgotPassword";
 import CallHistory from "../application/call/callHistory";
+import EmployeeDetails from "../hrm/employees/employeedetails";
+import Department from "../hrm/employees/deparment";
 import Email from "../application/email";
 import AdminDashboard from "../mainMenu/adminDashboard";
 import EditInvoice from "../finance-accounts/payrool/payslip";
@@ -68,6 +70,19 @@ export const publicRoutes = [
   {
     path: routes.adminDashboard,
     element: <AdminDashboard />,
+    route: Route,
+  },
+
+  //hrm
+  {
+    path: routes.employeedetails,
+    element: <EmployeeDetails />,
+    route: Route,
+  },
+
+  {
+    path: routes.departments,
+    element: <Department />,
     route: Route,
   },
 
