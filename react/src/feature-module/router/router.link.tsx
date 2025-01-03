@@ -17,6 +17,7 @@ import PayRollOvertime from "../finance-accounts/payrool/payrollOvertime";
 import PayRollDeduction from "../finance-accounts/payrool/payrollDedution";
 import EmployeeDetails from "../hrm/employees/employeedetails";
 import Department from "../hrm/employees/deparment";
+import Holidays from "../hrm/holidays";
 
 import Email from "../application/email";
 
@@ -83,6 +84,11 @@ export const publicRoutes = [
   {
     path: routes.departments,
     element: <Department />,
+    route: Route,
+  },
+  {
+    path: routes.holidays,
+    element: <Holidays />,
     route: Route,
   },
 
